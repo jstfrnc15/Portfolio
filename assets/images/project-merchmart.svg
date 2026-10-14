@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="qcuDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E0F14"/>
+      <stop offset="100%" stop-color="#08090C"/>
+    </linearGradient>
+    <filter id="cardShadowDark2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#qcuDarkGrad)"/>
+  <line x1="0" y1="40" x2="800" y2="40" stroke="#1F2128" stroke-width="1"/>
+  <line x1="0" y1="460" x2="800" y2="460" stroke="#1F2128" stroke-width="1"/>
+
+  <!-- Browser Window Frame -->
+  <g transform="translate(40, 30)">
+    <rect width="720" height="440" rx="10" fill="#111217" stroke="#22242C" stroke-width="1.5" filter="url(#cardShadowDark2)"/>
+
+    <!-- Top Window Bar -->
+    <path d="M 0 10 Q 0 0 10 0 L 710 0 Q 720 0 720 10 L 720 40 L 0 40 Z" fill="#16171F"/>
+    <line x1="0" y1="40" x2="720" y2="40" stroke="#22242C" stroke-width="1"/>
+    
+    <!-- Controls -->
+    <circle cx="22" cy="20" r="4.5" fill="#EF4444"/>
+    <circle cx="38" cy="20" r="4.5" fill="#F59E0B"/>
+    <circle cx="54" cy="20" r="4.5" fill="#10B981"/>
+    
+    <!-- Address Bar -->
+    <rect x="180" y="10" width="360" height="20" rx="4" fill="#0C0D11" stroke="#22242C" stroke-width="1"/>
+    <text x="360" y="24" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10B981" text-anchor="middle">https://qcu-merchmart.vercel.app</text>
+
+    <!-- E-Commerce Storefront Header -->
+    <g transform="translate(30, 58)">
+      <text font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#EDEDED">QCU MerchMart</text>
+      <text x="120" y="0" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10B981">· OFFICIAL CO-OP STORE</text>
+      
+      <!-- Nav Tabs -->
+      <text x="360" y="0" font-family="'Inter', sans-serif" font-size="10" fill="#EDEDED" font-weight="600">Uniforms</text>
+      <text x="430" y="0" font-family="'Inter', sans-serif" font-size="10" fill="#71717A">College Department</text>
+      <text x="545" y="0" font-family="'Inter', sans-serif" font-size="10" fill="#71717A">Lanyards &amp; Supplies</text>
+      <line x1="0" y1="16" x2="660" y2="16" stroke="#1F2128" stroke-width="1"/>
+    </g>
+
+    <!-- Product Layout Grid -->
+    <g transform="translate(30, 92)">
+      <!-- Left: Interactive Product Display -->
+      <g transform="translate(0, 0)">
+        <rect width="260" height="295" rx="8" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+        
+        <!-- Shirt Illustration Container -->
+        <rect x="20" y="18" width="220" height="180" rx="6" fill="#0E0F14" stroke="#22242C" stroke-width="1"/>
+        
+        <!-- Minimalist Uniform Graphic in dark mode -->
+        <path d="M 90 60 L 110 45 L 150 45 L 170 60 L 195 85 L 175 110 L 160 95 L 160 170 L 100 170 L 100 95 L 85 110 L 65 85 Z" fill="#1A1C24" stroke="#10B981" stroke-width="1.5"/>
+        <path d="M 110 45 Q 130 65 150 45" fill="none" stroke="#10B981" stroke-width="1.5"/>
+        <rect x="110" y="75" width="40" height="20" rx="2" fill="#10B981" opacity="0.2"/>
+        <text x="130" y="88" font-family="'JetBrains Mono', monospace" font-size="7" font-weight="700" fill="#10B981" text-anchor="middle">QCU · IT</text>
+        
+        <!-- Thumbnail Row -->
+        <rect x="20" y="212" width="48" height="40" rx="4" fill="#1A1C24" stroke="#10B981" stroke-width="1.5"/>
+        <text x="44" y="235" font-family="'JetBrains Mono', monospace" font-size="8" fill="#10B981" text-anchor="middle">Front</text>
+        
+        <rect x="76" y="212" width="48" height="40" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+        <text x="100" y="235" font-family="'JetBrains Mono', monospace" font-size="8" fill="#71717A" text-anchor="middle">Back</text>
+
+        <rect x="132" y="212" width="48" height="40" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+        <text x="156" y="235" font-family="'JetBrains Mono', monospace" font-size="8" fill="#71717A" text-anchor="middle">Specs</text>
+
+        <!-- Sizing Chart Trigger -->
+        <rect x="188" y="212" width="52" height="40" rx="4" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+        <text x="214" y="228" font-family="'Inter', sans-serif" font-size="7.5" font-weight="600" fill="#10B981" text-anchor="middle">Size Chart</text>
+        <text x="214" y="240" font-family="'JetBrains Mono', monospace" font-size="7" fill="#10B981" text-anchor="middle">✓ Verified</text>
+      </g>
+
+      <!-- Right: Product Purchasing & Inventory Details -->
+      <g transform="translate(285, 0)">
+        <text font-family="'JetBrains Mono', monospace" font-size="9" fill="#10B981" letter-spacing="0.5">COLLEGE OF COMPUTER STUDIES · OFFICIAL MERCH</text>
+        <text y="24" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#EDEDED">CCS Departmental Polo Shirt</text>
+        
+        <text y="50" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#EDEDED">₱ 480.00</text>
+        <rect x="110" y="36" width="95" height="18" rx="9" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+        <text x="157" y="48" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#10B981" text-anchor="middle">● In Stock (24 pcs)</text>
+
+        <!-- Size Selector -->
+        <text y="82" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#EDEDED">Select Size</text>
+        <g transform="translate(0, 92)">
+          <rect width="36" height="28" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+          <text x="18" y="18" font-family="'Inter', sans-serif" font-size="10" fill="#71717A" text-anchor="middle">XS</text>
+
+          <rect x="44" width="36" height="28" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+          <text x="62" y="18" font-family="'Inter', sans-serif" font-size="10" fill="#71717A" text-anchor="middle">S</text>
+
+          <rect x="88" width="36" height="28" rx="4" fill="#10B981" stroke="#10B981" stroke-width="1"/>
+          <text x="106" y="18" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#090A0C" text-anchor="middle">M</text>
+
+          <rect x="132" width="36" height="28" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+          <text x="150" y="18" font-family="'Inter', sans-serif" font-size="10" fill="#71717A" text-anchor="middle">L</text>
+
+          <rect x="176" width="36" height="28" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+          <text x="194" y="18" font-family="'Inter', sans-serif" font-size="10" fill="#71717A" text-anchor="middle">XL</text>
+        </g>
+
+        <!-- Multi-Channel Payment Channels -->
+        <text y="148" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#EDEDED">Supported Co-Op Payments</text>
+        <g transform="translate(0, 158)">
+          <rect width="85" height="26" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+          <text x="42" y="16" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="500" fill="#EDEDED" text-anchor="middle">GCash</text>
+
+          <rect x="95" width="85" height="26" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+          <text x="137" y="16" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="500" fill="#EDEDED" text-anchor="middle">Maya</text>
+
+          <rect x="190" width="105" height="26" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+          <text x="242" y="16" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="500" fill="#EDEDED" text-anchor="middle">Over-The-Counter</text>
+        </g>
+
+        <!-- CTA Buttons -->
+        <g transform="translate(0, 204)">
+          <rect width="210" height="34" rx="4" fill="#10B981"/>
+          <text x="105" y="21" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#090A0C" text-anchor="middle">Order for Co-Op Pickup</text>
+
+          <rect x="220" width="145" height="34" rx="4" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+          <text x="292" y="21" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#EDEDED" text-anchor="middle">Add to Bag</text>
+        </g>
+
+        <!-- Mini Feature Callout -->
+        <g transform="translate(0, 255)">
+          <rect width="365" height="38" rx="6" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+          <text x="12" y="16" font-family="'Inter', sans-serif" font-size="9.5" font-weight="600" fill="#EDEDED">Student-Centric Flow:</text>
+          <text x="12" y="28" font-family="'Inter', sans-serif" font-size="8.5" fill="#9CA3AF">Direct student number verification &amp; real-time queue notifications.</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

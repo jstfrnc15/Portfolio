@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Franc Sant Alcaide — Developer Portfolio · 2026</title>
+  <meta name="description" content="Personal developer portfolio of Franc Sant Alcaide, 4th Year BSIT student focused on building thoughtful, functional, and user-friendly digital experiences.">
+  <meta name="author" content="Franc Sant Alcaide">
+  <meta name="theme-color" content="#08090C">
+
+  <!-- Open Graph / Meta -->
+  <link rel="canonical" href="https://franc-alcaide.vercel.app">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Franc Sant Alcaide — Developer Portfolio · 2026">
+  <meta property="og:description" content="Developer focused on building thoughtful, functional, and user-friendly digital experiences.">
+  <meta property="og:url" content="https://franc-alcaide.vercel.app">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Minimalist Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" aria-label="Franc Sant Alcaide - Home">
+        <div class="brand-monogram">FSA</div>
+        <div class="brand-text">
+          <span class="brand-name">Franc Sant Alcaide</span>
+          <span class="brand-role">Developer Portfolio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-outline nav-cta">Get In Touch</a>
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+          <a href="#home" class="mobile-nav-link">Home</a>
+          <a href="#services" class="mobile-nav-link">Services</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#skills" class="mobile-nav-link">Skills</a>
+          <a href="#projects" class="mobile-nav-link">Projects</a>
+          <a href="#experience" class="mobile-nav-link">Experience</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+        <div class="mobile-menu-footer">
+          <div class="availability-indicator">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-text">Available for OJT Opportunities</span>
+          </div>
+          <p class="mobile-contact-email">francalcaide1@gmail.com</p>
+          <p class="mobile-contact-phone">(+63) 970-389-1041</p>
+          <a href="https://franc-alcaide.vercel.app" target="_blank" rel="noopener noreferrer" class="footer-domain-link">franc-alcaide.vercel.app &nearr;</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section (Inspired by Reference) -->
+    <section class="section hero" id="home">
+      <!-- Watermark year in background -->
+      <div class="hero-watermark" aria-hidden="true">2026</div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Small Introductory Label & Status -->
+          <div class="hero-eyebrow-wrapper">
+            <p class="hero-eyebrow">DEVELOPER PORTFOLIO · 2026</p>
+            <div class="availability-indicator" id="availability-badge" title="Actively seeking On-the-Job Training (OJT) opportunities">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span class="status-text">Available for OJT &amp; Junior Opportunities</span>
+            </div>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="hero-name">Franc Sant Alcaide</span>.
+          </h1>
+
+          <!-- Supporting Headline -->
+          <p class="hero-headline">
+            Developer focused on building thoughtful, functional, and user-friendly digital experiences.
+          </p>
+
+          <!-- Supporting Description -->
+          <p class="hero-description">
+            I'm continuously developing my skills in web development, exploring new technologies, and building projects that turn ideas into practical solutions. 4th Year BSIT student combining UI/UX design, frontend development, and foundational IT support.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 3.333v9.334M3.333 8l4.667 4.667L12.667 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <svg class="btn-icon-inline" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3.333 8h9.334M8 3.333l4.667 4.667L8 12.667" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="mailto:francalcaide1@gmail.com?subject=Resume%20Request%20-%20Franc%20Sant%20Alcaide" class="btn btn-ghost" title="Request or download Franc's updated resume">
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M14 10v2.667a1.333 1.333 0 01-1.333 1.333H3.333A1.333 1.333 0 012 12.667V10M4.667 6.667L8 10l3.333-3.333M8 10V2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Quick Metadata Bar -->
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <span class="meta-label">Education</span>
+              <span class="meta-value">4th Year BSIT · Quezon City University</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="meta-label">Specialization</span>
+              <span class="meta-value">UI/UX · Frontend · IT Support</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="meta-label">Location</span>
+              <span class="meta-value">Quezon City, Philippines</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Developer HUD Card (Right Column) -->
+        <div class="hero-visual">
+          <div class="hero-hud-card">
+            <!-- HUD Status Header -->
+            <div class="hud-header">
+              <a href="https://franc-alcaide.vercel.app" target="_blank" rel="noopener noreferrer" class="hud-tag" title="Open live production portfolio on vercel.app">franc-alcaide.vercel.app &nearr;</a>
+              <span class="hud-status">
+                <span class="hud-dot"></span>
+                ready.for.ojt
+              </span>
+            </div>
+
+            <!-- Ticker Feed -->
+            <div class="hud-feed-wrap">
+              <div class="hud-feed-track">
+                <span>UI/UX Design · Figma</span>
+                <span>Responsive Web · HTML/CSS/JS</span>
+                <span>IT Support &amp; Diagnostics</span>
+                <span>Design Systems · Wireframing</span>
+                <span>Graphic Design · Photoshop</span>
+                <span>UI/UX Design · Figma</span>
+                <span>Responsive Web · HTML/CSS/JS</span>
+                <span>IT Support &amp; Diagnostics</span>
+              </div>
+            </div>
+
+            <!-- Central Typographic Monogram Stage -->
+            <div class="hud-stage">
+              <div class="hud-monogram">FSA</div>
+              <div class="hud-caption">
+                <p class="hud-caption-name">Franc Sant Alcaide</p>
+                <p class="hud-caption-role">BSIT Student &amp; Designer</p>
+              </div>
+            </div>
+
+            <!-- Key Developer Metrics Grid -->
+            <div class="hud-metrics-grid">
+              <div class="hud-metric-item">
+                <span class="metric-num">4th Year</span>
+                <span class="metric-lbl">BS Information Tech</span>
+              </div>
+              <div class="hud-metric-item">
+                <span class="metric-num">3 Real</span>
+                <span class="metric-lbl">Featured Projects</span>
+              </div>
+              <div class="hud-metric-item">
+                <span class="metric-num">4 Seminars</span>
+                <span class="metric-lbl">Certified Training</span>
+              </div>
+              <div class="hud-metric-item">
+                <span class="metric-num">100%</span>
+                <span class="metric-lbl">Ready for Placement</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Areas of Interest Section -->
+    <section class="section section-bordered section-alt services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <span class="section-number">01</span>
+            <div class="section-titles">
+              <h2 class="section-title">What I Work On</h2>
+              <p class="section-subtitle">Core capabilities spanning interface design, frontend implementation, and systems support.</p>
+            </div>
+          </div>
+          <div class="section-header-note">
+            <span class="note-pill">4 Core Focus Areas</span>
+          </div>
+        </div>
+
+        <div class="services-list">
+          <!-- Service 01 -->
+          <article class="service-row">
+            <span class="service-num">01</span>
+            <h3 class="service-title">UI/UX &amp; Wireframing</h3>
+            <p class="service-desc">
+              Designing intuitive user journeys, interactive wireframes, and scalable design systems in Figma. Experienced in mapping out complex workflows for enterprise payroll software and university e-commerce portals.
+            </p>
+          </article>
+
+          <!-- Service 02 -->
+          <article class="service-row">
+            <span class="service-num">02</span>
+            <h3 class="service-title">Responsive UI Implementation</h3>
+            <p class="service-desc">
+              Translating design mockups into clean, semantic HTML5, modern CSS3, and JavaScript. Focusing on responsive layouts that adapt naturally across smartphones, tablets, and desktop displays with fast load speeds.
+            </p>
+          </article>
+
+          <!-- Service 03 -->
+          <article class="service-row">
+            <span class="service-num">03</span>
+            <h3 class="service-title">Graphic Design &amp; Digital Assets</h3>
+            <p class="service-desc">
+              Creating high-impact visual assets, broadcast overlays, lower thirds, and marketing graphics for livestream environments (TikTok Live) and brand campaigns using Adobe Photoshop, Illustrator, and Canva.
+            </p>
+          </article>
+
+          <!-- Service 04 -->
+          <article class="service-row">
+            <span class="service-num">04</span>
+            <h3 class="service-title">IT Support &amp; System Setup</h3>
+            <p class="service-desc">
+              Providing dependable technical diagnostics, hardware troubleshooting, operating system configuration, software installations, and workstation equipment management to keep office workflows running smoothly.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section section-bordered about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <span class="section-number">02</span>
+            <div class="section-titles">
+              <h2 class="section-title">About Me</h2>
+              <p class="section-subtitle">Background, problem-solving approach, and professional goals.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Narrative -->
+          <div class="about-narrative">
+            <p class="lead-text">
+              I'm Franc Sant Alcaide, a 4th Year Bachelor of Science in Information Technology student at Quezon City University with a passion for building websites and digital products that are simple to use, visually clear, and practical.
+            </p>
+            <p class="body-text">
+              My technical journey bridges the gap between interface design and computer systems. Having worked contractually in digital graphic creation for live-stream broadcasts and customer support operations, I understand both the visual polish required to engage users and the behind-the-scenes discipline needed to resolve technical issues.
+            </p>
+            <p class="body-text">
+              I am eager to contribute my technical foundation, design proficiencies, and problem-solving skills to an innovative On-the-Job Training (OJT) team where I can collaborate on production software and continue growing as a developer.
+            </p>
+
+            <!-- Education Highlight Card -->
+            <div class="education-card">
+              <div class="education-header">
+                <div>
+                  <span class="mono-label">HIGHER EDUCATION</span>
+                  <h4 class="education-degree">Bachelor of Science in Information Technology</h4>
+                  <p class="education-institution">Quezon City University</p>
+                </div>
+                <span class="education-period">2017 — Present (4th Year)</span>
+              </div>
+              <p class="education-summary">
+                Core coursework in Systems Analysis &amp; Design, Database Management, Web Development, Network Administration (CCNA Fundamentals), and Computer Ethics.
+              </p>
+            </div>
+
+            <!-- Approach to Solving Problems -->
+            <div class="principles-block">
+              <h3 class="principles-heading">How I Approach Solving Problems</h3>
+              <div class="principles-grid">
+                <div class="principle-item">
+                  <span class="principle-num">01</span>
+                  <div>
+                    <h4 class="principle-title">Clarity First</h4>
+                    <p class="principle-desc">Interfaces should never confuse users. I organize data hierarchies so vital information and actions are immediately obvious.</p>
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <span class="principle-num">02</span>
+                  <div>
+                    <h4 class="principle-title">Methodical Debugging</h4>
+                    <p class="principle-desc">Whether troubleshooting workstation hardware or debugging layout issues, I isolate variables step by step to find root causes.</p>
+                  </div>
+                </div>
+                <div class="principle-item">
+                  <span class="principle-num">03</span>
+                  <div>
+                    <h4 class="principle-title">Consistent Growth</h4>
+                    <p class="principle-desc">Web technologies and design patterns evolve quickly. I take pride in active learning, seminar training, and hands-on project exploration.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Sidebar -->
+          <aside class="about-sidebar" aria-label="Core Competencies">
+            <div class="sidebar-card">
+              <div class="sidebar-header">
+                <span class="mono-label">COMPETENCIES</span>
+                <h3 class="sidebar-title">What I Bring to a Team</h3>
+              </div>
+
+              <ul class="compact-skills-list">
+                <li class="compact-skill-item">
+                  <span class="skill-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.333 4L6 11.333 2.667 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <div class="skill-info">
+                    <strong class="skill-name">UI/UX Wireframing &amp; Prototyping</strong>
+                    <span class="skill-desc">End-to-end user flows, interactive Figma prototypes</span>
+                  </div>
+                </li>
+
+                <li class="compact-skill-item">
+                  <span class="skill-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.333 4L6 11.333 2.667 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <div class="skill-info">
+                    <strong class="skill-name">Responsive Web Design</strong>
+                    <span class="skill-desc">Fluid layouts adhering to accessibility standards</span>
+                  </div>
+                </li>
+
+                <li class="compact-skill-item">
+                  <span class="skill-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.333 4L6 11.333 2.667 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <div class="skill-info">
+                    <strong class="skill-name">Graphic Design &amp; Digital Assets</strong>
+                    <span class="skill-desc">Stream overlays, promotional banners, vector icons</span>
+                  </div>
+                </li>
+
+                <li class="compact-skill-item">
+                  <span class="skill-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.333 4L6 11.333 2.667 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <div class="skill-info">
+                    <strong class="skill-name">Foundational IT Support</strong>
+                    <span class="skill-desc">Software installation, OS setup &amp; hardware maintenance</span>
+                  </div>
+                </li>
+
+                <li class="compact-skill-item">
+                  <span class="skill-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.333 4L6 11.333 2.667 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <div class="skill-info">
+                    <strong class="skill-name">Client Communication</strong>
+                    <span class="skill-desc">Active listening, issue diagnosis, clear resolutions</span>
+                  </div>
+                </li>
+
+                <li class="compact-skill-item">
+                  <span class="skill-check" aria-hidden="true">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                      <path d="M13.333 4L6 11.333 2.667 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <div class="skill-info">
+                    <strong class="skill-name">Design Systems</strong>
+                    <span class="skill-desc">Color tokens, typography hierarchy, component reuse</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="sidebar-footer">
+                <span class="sidebar-subtext">Open to remote and on-site OJT roles.</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section section-bordered section-alt skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <span class="section-number">03</span>
+            <div class="section-titles">
+              <h2 class="section-title">Technical Skills</h2>
+              <p class="section-subtitle">Practical tools, technologies, and competencies used in actual projects.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Category 1: Frontend Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-index">01</span>
+              <h3 class="category-title">Frontend Development</h3>
+            </div>
+            <p class="category-desc">Building responsive interfaces, semantic structure, and accessible components.</p>
+            <ul class="text-skill-list">
+              <li class="text-skill-item">
+                <span class="item-name">HTML5</span>
+                <span class="item-role">Semantic structure, SEO, accessibility</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">CSS3 / Modern CSS</span>
+                <span class="item-role">Flexbox, CSS Grid, Custom Properties</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">JavaScript (ES6+)</span>
+                <span class="item-role">DOM manipulation, fetch API, client logic</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Responsive Design</span>
+                <span class="item-role">Mobile-first layouts, fluid viewports</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">UI Implementation</span>
+                <span class="item-role">Figma to code translation</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: UI / UX Designing -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-index">02</span>
+              <h3 class="category-title">UI / UX Designing</h3>
+            </div>
+            <p class="category-desc">Crafting wireframes, interactive user flows, and structured design systems.</p>
+            <ul class="text-skill-list">
+              <li class="text-skill-item">
+                <span class="item-name">Figma</span>
+                <span class="item-role">High-fidelity mockups, prototypes, components</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Adobe XD</span>
+                <span class="item-role">Screen flows &amp; user journey mapping</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Canva</span>
+                <span class="item-role">Rapid visual presentations &amp; layouts</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Design Systems</span>
+                <span class="item-role">Consistent tokens, spacing, typography scales</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">User Flow Optimization</span>
+                <span class="item-role">Frictionless checkout &amp; payroll steps</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Graphic Designing -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-index">03</span>
+              <h3 class="category-title">Graphic Designing</h3>
+            </div>
+            <p class="category-desc">Producing engaging digital marketing assets and broadcast graphics.</p>
+            <ul class="text-skill-list">
+              <li class="text-skill-item">
+                <span class="item-name">Adobe Photoshop</span>
+                <span class="item-role">Image editing, compositing, visual design</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Adobe Illustrator</span>
+                <span class="item-role">Vector graphics, logos, icons</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Live Stream Overlays</span>
+                <span class="item-role">TikTok Live broadcast cards, lower thirds</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Brand Translation</span>
+                <span class="item-role">Applying partner guidelines to digital assets</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Rapid Turnarounds</span>
+                <span class="item-role">Fast-paced campaign asset delivery</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 4: IT Support & Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-index">04</span>
+              <h3 class="category-title">IT Support &amp; Workflow</h3>
+            </div>
+            <p class="category-desc">Hardware/software diagnostics, productivity tools, and documentation.</p>
+            <ul class="text-skill-list">
+              <li class="text-skill-item">
+                <span class="item-name">Basic Troubleshooting</span>
+                <span class="item-role">Hardware diagnostics, OS faults, connectivity</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Software Setup</span>
+                <span class="item-role">Installation, environment configuration</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Equipment Management</span>
+                <span class="item-role">Peripherals, office computers, maintenance</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Microsoft Office Tools</span>
+                <span class="item-role">Word, Excel (spreadsheets), PowerPoint</span>
+              </li>
+              <li class="text-skill-item">
+                <span class="item-name">Network Fundamentals</span>
+                <span class="item-role">IP addressing, topologies (CCNA Seminar)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section section-bordered projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <span class="section-number">04</span>
+            <div class="section-titles">
+              <h2 class="section-title">Featured Projects</h2>
+              <p class="section-subtitle">Real-world systems, UI/UX flows, and visual assets built with care.</p>
+            </div>
+          </div>
+          <div class="section-header-note">
+            <span class="note-pill">3 Detailed Case Studies</span>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 01: SheEssentials HR Payroll Management System -->
+          <article class="project-card" id="project-01">
+            <div class="project-media-wrapper">
+              <div class="project-media-frame">
+                <img src="assets/images/project-sheessentials.svg" alt="SheEssentials HR Payroll Management System preview" class="project-media" loading="lazy">
+                <div class="project-type-tag">Enterprise SaaS · 2026</div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="project-index">PROJECT / 01</span>
+                <span class="project-type-inline">Role: UI/UX Designer</span>
+              </div>
+              <h3 class="project-title">
+                <a href="#project-detail-sheessentials" class="project-title-link" data-modal="modal-sheessentials">
+                  SheEssentials HR Payroll Management System
+                </a>
+              </h3>
+              <p class="project-description">
+                Designed and optimized end-to-end user flows for complex HR and payroll workflows, reducing administrative friction for both HR personnel and employees. Created intuitive, data-dense dashboards for attendance tracking, tax computations, and salary disbursements.
+              </p>
+              
+              <div class="project-tech-stack" aria-label="Technologies used">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">UI/UX Design</span>
+                <span class="tech-tag">Design System</span>
+                <span class="tech-tag">Dashboard Architecture</span>
+                <span class="tech-tag">Cross-Platform SaaS</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-secondary" data-modal="modal-sheessentials">
+                  <span>View Case Study</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <a href="https://she-essentials.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="Open live project on vercel.app">
+                  <span>she-essentials.vercel.app</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: QCU MerchMart -->
+          <article class="project-card" id="project-02">
+            <div class="project-media-wrapper">
+              <div class="project-media-frame">
+                <img src="assets/images/project-merchmart.svg" alt="QCU MerchMart E-Commerce System preview" class="project-media" loading="lazy">
+                <div class="project-type-tag">E-Commerce Platform · 2024</div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="project-index">PROJECT / 02</span>
+                <span class="project-type-inline">Role: Lead UI/UX Designer</span>
+              </div>
+              <h3 class="project-title">
+                <a href="#project-detail-merchmart" class="project-title-link" data-modal="modal-merchmart">
+                  QCU MerchMart — E-Commerce System for QCU Co-Op
+                </a>
+              </h3>
+              <p class="project-description">
+                Designed and optimized end-to-end user flows for university uniform and supply purchasing, streamlining checkout friction for students. Built intuitive product pages with sizing charts, real-time inventory tracking, and accessible multi-channel payment integrations.
+              </p>
+              
+              <div class="project-tech-stack" aria-label="Technologies used">
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Lead UI/UX</span>
+                <span class="tech-tag">E-Commerce Architecture</span>
+                <span class="tech-tag">Responsive Design System</span>
+                <span class="tech-tag">Component Reuse</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-secondary" data-modal="modal-merchmart">
+                  <span>View Case Study</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <a href="https://qcu-merchmart.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="Open live project on vercel.app">
+                  <span>qcu-merchmart.vercel.app</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: Iconify Live Stream Graphics -->
+          <article class="project-card" id="project-03">
+            <div class="project-media-wrapper">
+              <div class="project-media-frame">
+                <img src="assets/images/project-iconify.svg" alt="Iconify TikTok Live Graphics preview" class="project-media" loading="lazy">
+                <div class="project-type-tag">Broadcast Branding · 2024</div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-top">
+                <span class="project-index">PROJECT / 03</span>
+                <span class="project-type-inline">Role: Graphic Designer / Artist</span>
+              </div>
+              <h3 class="project-title">
+                <a href="#project-detail-iconify" class="project-title-link" data-modal="modal-iconify">
+                  TikTok Live Stream Visual Identity &amp; Overlays — Iconify
+                </a>
+              </h3>
+              <p class="project-description">
+                Designed high-impact visual assets and broadcast overlays optimized for live-stream environments on TikTok Live. Collaborated with partner brands to translate identities into real-time dynamic graphics that enhanced audience engagement under rapid turnarounds.
+              </p>
+              
+              <div class="project-tech-stack" aria-label="Technologies used">
+                <span class="tech-tag">Adobe Photoshop</span>
+                <span class="tech-tag">Adobe Illustrator</span>
+                <span class="tech-tag">Canva</span>
+                <span class="tech-tag">Figma</span>
+                <span class="tech-tag">Livestream Assets</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="btn btn-sm btn-secondary" data-modal="modal-iconify">
+                  <span>View Case Study</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <a href="https://iconify-stream.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="Open live project on vercel.app">
+                  <span>iconify-stream.vercel.app</span>
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-footer-note">
+          <p>
+            <span class="note-bullet">✦</span> 
+            Projects reflect authentic work from Franc's professional engagements and academic design experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section class="section section-bordered section-alt experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <span class="section-number">05</span>
+            <div class="section-titles">
+              <h2 class="section-title">Experience &amp; Education</h2>
+              <p class="section-subtitle">Work history, university education, and certified technical training.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Jan 2024 — Feb 2024</span>
+              <span class="timeline-badge">Contractual</span>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-role-header">
+                <h3 class="timeline-role">Graphic Designer / Graphic Artist</h3>
+                <span class="timeline-company">Iconify</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Designed engaging, high-impact visual assets and overlays optimized for live-stream environments on TikTok Live.</li>
+                <li>Collaborated with partner brands to translate brand identities into dynamic, real-time graphics that enhanced audience engagement and stream production quality.</li>
+                <li>Delivered rapid turnaround assets tailored to fast-paced live marketing campaigns and interactive creator sessions.</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="tech-tag">TikTok Live Overlays</span>
+                <span class="tech-tag">Adobe Photoshop</span>
+                <span class="tech-tag">Brand Identity</span>
+                <span class="tech-tag">Rapid Turnaround</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">Nov 2022 — Feb 2023</span>
+              <span class="timeline-badge">Seasonal</span>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-role-header">
+                <h3 class="timeline-role">Customer Support Representative</h3>
+                <span class="timeline-company">Inspiro Relia, Inc. (1800-Flowers Account)</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Managed inbound customer communications via phone and email for 1800-Flowers, resolving product inquiries, order issues, and service requests efficiently.</li>
+                <li>Provided high-quality customer service by actively listening to client needs, offering tailored product recommendations, and ensuring timely problem resolution.</li>
+                <li>Maintained high satisfaction and service standards in a fast-paced seasonal retail environment while handling sensitive order modifications and delivery tracking.</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="tech-tag">Customer Care</span>
+                <span class="tech-tag">Phone &amp; Email Support</span>
+                <span class="tech-tag">Problem Resolution</span>
+                <span class="tech-tag">Order Tracking</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education Item -->
+          <div class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-period">2017 — Present</span>
+              <span class="timeline-badge">Higher Education</span>
+            </div>
+            <div class="timeline-body">
+              <div class="timeline-role-header">
+                <h3 class="timeline-role">Bachelor of Science in Information Technology</h3>
+                <span class="timeline-company">Quezon City University (4th Year)</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Dedicated student combining a strong technical foundation with medium proficiencies in UI/UX design, graphic design, and foundational IT support.</li>
+                <li>Coursework in database systems, systems analysis, network administration fundamentals, software development, and user interface design.</li>
+                <li>Active in academic projects and university co-op system development.</li>
+              </ul>
+              <div class="timeline-skills">
+                <span class="tech-tag">BS Information Technology</span>
+                <span class="tech-tag">4th Year Student</span>
+                <span class="tech-tag">OJT Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trainings & Seminars Grid -->
+        <div style="margin-top: 3.5rem;">
+          <div class="section-title-wrapper" style="margin-bottom: 1.5rem;">
+            <span class="section-number">✦</span>
+            <div>
+              <h3 style="font-size: 1.25rem; font-weight: 600; color: var(--text-primary);">Certified Trainings &amp; Seminars</h3>
+            </div>
+          </div>
+
+          <div class="seminars-grid">
+            <div class="seminar-card">
+              <div class="seminar-top">
+                <span class="seminar-year">2026</span>
+                <span class="seminar-institution">Quezon City University</span>
+              </div>
+              <h4 class="seminar-title">Legal, Ethical, and Professional Conduct in Cyberspace</h4>
+              <p class="seminar-desc">
+                Focus on professional standards, digital copyright, ethical cyberspace conduct, and data privacy regulations.
+              </p>
+            </div>
+
+            <div class="seminar-card">
+              <div class="seminar-top">
+                <span class="seminar-year">2023</span>
+                <span class="seminar-institution">Quezon City University</span>
+              </div>
+              <h4 class="seminar-title">Ignite Summit 2023: Innovation Generation</h4>
+              <p class="seminar-desc">
+                Navigating IT Trends and Emerging Technologies, cloud paradigms, modern software workflows, and digital innovation.
+              </p>
+            </div>
+
+            <div class="seminar-card">
+              <div class="seminar-top">
+                <span class="seminar-year">2021</span>
+                <span class="seminar-institution">Top Review Center</span>
+              </div>
+              <h4 class="seminar-title">CCNA Introduction and Technical Seminar</h4>
+              <p class="seminar-desc">
+                Foundational Cisco networking training covering topologies, IPv4/IPv6 addressing, routing protocols, and switches.
+              </p>
+            </div>
+
+            <div class="seminar-card">
+              <div class="seminar-top">
+                <span class="seminar-year">2021</span>
+                <span class="seminar-institution">Our Lady of Fatima University</span>
+              </div>
+              <h4 class="seminar-title">In-Depth Cybersecurity Webinar</h4>
+              <p class="seminar-desc">
+                Cyber defense principles, authentication security, threat mitigation, and endpoint data protection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-bordered contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <span class="section-number">06</span>
+            <div class="section-titles">
+              <h2 class="section-title">Get In Touch</h2>
+              <p class="section-subtitle">Have a project or opportunity in mind? I'm open to connecting.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Direct Info -->
+          <div class="contact-info-panel">
+            <h3 class="contact-info-title">Have a project or opportunity in mind?</h3>
+            <p class="contact-info-desc">
+              I'm open to connecting with people, learning from new opportunities, and collaborating on meaningful projects. Actively looking for an innovative team for my On-the-Job Training (OJT).
+            </p>
+
+            <div class="contact-methods">
+              <!-- Email -->
+              <div class="contact-method-card">
+                <span class="method-label">Direct Email</span>
+                <div class="method-link-wrapper">
+                  <a href="mailto:francalcaide1@gmail.com" class="method-link" id="email-address">francalcaide1@gmail.com</a>
+                  <button type="button" class="btn-copy-email" id="btn-copy-email" title="Copy email address" aria-label="Copy email address">
+                    <svg class="copy-icon" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <rect x="5.333" y="5.333" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.2"/>
+                      <path d="M10.667 3.333H3.333C2.597 3.333 2 3.93 2 4.667v7.333" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                    <span class="copy-feedback" id="copy-feedback">Copy</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-method-card">
+                <span class="method-label">Direct Phone / Call</span>
+                <div class="method-link-wrapper">
+                  <a href="tel:+639703891041" class="method-link">(+63) 970-389-1041</a>
+                  <a href="tel:+639703891041" class="btn-copy-email" title="Call directly">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M14.667 11.28v2.387a1.333 1.333 0 01-1.454 1.333 13.187 13.187 0 01-5.753-2.047 12.987 12.987 0 01-4-4 13.187 13.187 0 01-2.047-5.78A1.333 1.333 0 012.74 1.74h2.387a1.333 1.333 0 011.333 1.147c.084.64.24 1.267.467 1.866a1.333 1.333 0 01-.3 1.407l-1.013 1.013a10.667 10.667 0 004 4l1.013-1.013a1.333 1.333 0 011.407-.3c.6.227 1.226.383 1.866.467a1.333 1.333 0 011.147 1.333z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Call</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location & Time -->
+              <div class="contact-method-card">
+                <span class="method-label">Location &amp; Timezone</span>
+                <p class="method-val">Quezon City, Philippines · (<span id="local-time" class="live-time">Local Time</span>)</p>
+              </div>
+
+              <!-- Production Vercel Domain -->
+              <div class="contact-method-card">
+                <span class="method-label">Production Domain</span>
+                <div class="method-link-wrapper">
+                  <a href="https://franc-alcaide.vercel.app" target="_blank" rel="noopener noreferrer" class="method-link" id="vercel-domain">franc-alcaide.vercel.app</a>
+                  <a href="https://franc-alcaide.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-copy-email" title="Open live site on vercel.app">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>Visit</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="contact-method-card">
+                <span class="method-label">Professional Links</span>
+                <div class="social-links-row">
+                  <a href="mailto:francalcaide1@gmail.com" class="social-link">
+                    <span>Email Me</span>
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                  <a href="tel:+639703891041" class="social-link">
+                    <span>Call (+63) 970-389-1041</span>
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Clean Form -->
+          <div class="contact-form-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Your Name <span class="required-star">*</span></label>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Maria Santos" required autocomplete="name">
+                  <span class="form-error" id="name-error">Please enter your name</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address <span class="required-star">*</span></label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. maria@company.com" required autocomplete="email">
+                  <span class="form-error" id="email-error">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <input type="text" id="form-subject" name="subject" class="form-input" placeholder="e.g. OJT Interview / Project Collaboration">
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message <span class="required-star">*</span></label>
+                <textarea id="form-message" name="message" class="form-textarea" rows="5" placeholder="Write your message here..." required></textarea>
+                <span class="form-error" id="message-error">Please enter a message</span>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary" id="submit-btn">
+                  <span>Send Message</span>
+                  <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M14.667 1.333L7.333 8.667M14.667 1.333l-4 13.334-3.334-6-6-3.334 13.334-4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimalist Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-name">Franc Sant Alcaide</span>
+        <span class="footer-role">Developer Portfolio</span>
+        <a href="https://franc-alcaide.vercel.app" target="_blank" rel="noopener noreferrer" class="footer-domain-link" title="Open live production portfolio on vercel.app">franc-alcaide.vercel.app &nearr;</a>
+        <span class="footer-copy">© <span id="current-year">2026</span> · Quezon City University (BSIT)</span>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 12.667V3.333M3.333 8L8 3.333 12.667 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modals -->
+  <!-- Modal 1: SheEssentials HR Payroll Management System -->
+  <div class="modal" id="modal-sheessentials" role="dialog" aria-modal="true" aria-labelledby="modal-sheessentials-title" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">Project 01 — Enterprise SaaS (2026)</span>
+          <h3 class="modal-title" id="modal-sheessentials-title">SheEssentials HR Payroll Management System</h3>
+        </div>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close dialog">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M12 4L4 12M4 4l8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image-wrap">
+          <img src="assets/images/project-sheessentials.svg" alt="SheEssentials UI Preview" class="modal-image">
+        </div>
+        <div class="modal-section">
+          <h4>Project Overview</h4>
+          <p>
+            An enterprise-grade SaaS platform designed to modernize and simplify HR operations and payroll cycles. The system balances high data density with visual clarity, allowing administrators to process complex tax computations and manage employee compensation without cognitive fatigue.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4>Key Contributions &amp; Design Decisions</h4>
+          <ul class="modal-list">
+            <li>Designed and optimized end-to-end user flows for complex HR and payroll workflows, reducing administrative friction for both HR personnel and employees.</li>
+            <li>Created intuitive, data-dense dashboards and clear visual hierarchies for attendance tracking, tax computations (SSS, PhilHealth, Pag-IBIG), and salary disbursements.</li>
+            <li>Developed a scalable, accessible design system tailored to enterprise SaaS requirements, ensuring seamless cross-platform consistency.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h4>Tools &amp; Methods</h4>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Information Architecture</span>
+            <span class="tech-tag">Wireframing</span>
+            <span class="tech-tag">Component Architecture</span>
+            <span class="tech-tag">Data Table UX</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://she-essentials.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+          <span>Open on vercel.app</span>
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button type="button" class="btn btn-sm btn-outline" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: QCU MerchMart -->
+  <div class="modal" id="modal-merchmart" role="dialog" aria-modal="true" aria-labelledby="modal-merchmart-title" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">Project 02 — Lead UI/UX Designer (2024)</span>
+          <h3 class="modal-title" id="modal-merchmart-title">QCU MerchMart — E-Commerce System for QCU Co-Op</h3>
+        </div>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close dialog">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M12 4L4 12M4 4l8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image-wrap">
+          <img src="assets/images/project-merchmart.svg" alt="QCU MerchMart UI Preview" class="modal-image">
+        </div>
+        <div class="modal-section">
+          <h4>Project Overview</h4>
+          <p>
+            An official university e-commerce ordering platform created for the Quezon City University Cooperative. The platform replaces long in-person lines during enrollment rush with a streamlined digital ordering and size reservation system.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4>Key Contributions &amp; Design Decisions</h4>
+          <ul class="modal-list">
+            <li>Served as Lead UI/UX Designer, mapping student user flows from university uniform catalog discovery to on-campus pickup.</li>
+            <li>Created intuitive, high-converting product pages featuring clear sizing charts, real-time inventory tracking, and accessible multi-channel payment integrations (GCash, Maya, Over-The-Counter).</li>
+            <li>Developed a scalable, responsive design system tailored to e-commerce, ensuring visual consistency and seamless component reuse across mobile and desktop interfaces.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h4>Tools &amp; Methods</h4>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">E-Commerce UI/UX</span>
+            <span class="tech-tag">Design Systems</span>
+            <span class="tech-tag">Interactive Prototyping</span>
+            <span class="tech-tag">Mobile-First Layouts</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://qcu-merchmart.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+          <span>Open on vercel.app</span>
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button type="button" class="btn btn-sm btn-outline" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Iconify Live Stream Graphics -->
+  <div class="modal" id="modal-iconify" role="dialog" aria-modal="true" aria-labelledby="modal-iconify-title" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">Project 03 — Graphic Designer (2024)</span>
+          <h3 class="modal-title" id="modal-iconify-title">TikTok Live Stream Visual Identity &amp; Overlays — Iconify</h3>
+        </div>
+        <button type="button" class="modal-close" data-close-modal aria-label="Close dialog">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M12 4L4 12M4 4l8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image-wrap">
+          <img src="assets/images/project-iconify.svg" alt="Iconify Live Graphics Preview" class="modal-image">
+        </div>
+        <div class="modal-section">
+          <h4>Project Overview</h4>
+          <p>
+            A high-energy broadcast graphics and visual identity production kit tailored for commercial live-selling sessions on TikTok Live. The graphics balanced brand recognition with strict mobile screen readability.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4>Key Contributions &amp; Design Decisions</h4>
+          <ul class="modal-list">
+            <li>Designed engaging, high-impact visual assets and lower-third overlays optimized for vertical smartphone viewports during live events.</li>
+            <li>Collaborated with partner brands to translate their distinct brand identities into dynamic, real-time graphics that elevated audience engagement and stream production quality.</li>
+            <li>Delivered rapid-turnaround assets tailored to fast-paced live marketing campaigns and interactive creator sessions under strict deadlines.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h4>Tools &amp; Methods</h4>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Adobe Photoshop</span>
+            <span class="tech-tag">Adobe Illustrator</span>
+            <span class="tech-tag">Canva</span>
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Streaming Overlay Production</span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://iconify-stream.vercel.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+          <span>Open on vercel.app</span>
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H6M12 4V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button type="button" class="btn btn-sm btn-outline" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF9F5"/>
+      <stop offset="100%" stop-color="#EFECE6"/>
+    </linearGradient>
+    <filter id="cardShadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad2)"/>
+  <line x1="0" y1="40" x2="800" y2="40" stroke="#E5E4DF" stroke-width="1"/>
+  <line x1="0" y1="460" x2="800" y2="460" stroke="#E5E4DF" stroke-width="1"/>
+
+  <!-- Admin Window Container -->
+  <g transform="translate(40, 30)">
+    <!-- Window Frame -->
+    <rect width="720" height="440" rx="10" fill="#FFFFFF" stroke="#E5E4DF" stroke-width="1.5" filter="url(#cardShadow2)"/>
+
+    <!-- Window Top Bar -->
+    <path d="M 0 10 Q 0 0 10 0 L 710 0 Q 720 0 720 10 L 720 40 L 0 40 Z" fill="#F7F6F2"/>
+    <line x1="0" y1="40" x2="720" y2="40" stroke="#E5E4DF" stroke-width="1"/>
+    
+    <!-- Window Controls -->
+    <circle cx="22" cy="20" r="4.5" fill="#E2847A"/>
+    <circle cx="38" cy="20" r="4.5" fill="#E9C46A"/>
+    <circle cx="54" cy="20" r="4.5" fill="#8AB17D"/>
+    
+    <!-- Title / Breadcrumb -->
+    <rect x="180" y="10" width="360" height="20" rx="4" fill="#FFFFFF" stroke="#E5E4DF" stroke-width="1"/>
+    <text x="360" y="24" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777" text-anchor="middle">admin-core.console/management/overview</text>
+
+    <!-- Sidebar Mini (Left) -->
+    <rect x="0" y="40" width="140" height="400" fill="#FAFAF8" stroke="#E5E4DF" stroke-width="1"/>
+    <g transform="translate(16, 60)">
+      <text font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#171717">ADMIN CONSOLE</text>
+      
+      <!-- Nav items -->
+      <g transform="translate(0, 24)">
+        <rect width="112" height="24" rx="4" fill="#EAE8E1"/>
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#171717">Overview</text>
+      </g>
+      <g transform="translate(0, 56)">
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#777777">User Directory</text>
+      </g>
+      <g transform="translate(0, 84)">
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#777777">Activity Logs</text>
+      </g>
+      <g transform="translate(0, 112)">
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#777777">Reports</text>
+      </g>
+      <g transform="translate(0, 140)">
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#777777">System Settings</text>
+      </g>
+    </g>
+
+    <!-- Main Content Area -->
+    <g transform="translate(160, 55)">
+      <!-- Top Bar: Search & Action -->
+      <text font-family="'Inter', sans-serif" font-size="15" font-weight="600" fill="#171717">System Administration</text>
+      <rect x="360" y="0" width="140" height="26" rx="4" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+      <text x="372" y="17" font-family="'Inter', sans-serif" font-size="10" fill="#9E9D97">Filter records...</text>
+      <rect x="510" y="0" width="28" height="26" rx="4" fill="#171717"/>
+      <text x="524" y="17" font-family="'Inter', sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">+</text>
+
+      <!-- Stats Grid -->
+      <g transform="translate(0, 42)">
+        <!-- Stat 1 -->
+        <rect width="170" height="68" rx="6" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+        <text x="12" y="20" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777">TOTAL RECORDS</text>
+        <text x="12" y="46" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#171717">1,428</text>
+        <text x="12" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#52895A">+12% this month</text>
+
+        <!-- Stat 2 -->
+        <rect x="185" width="170" height="68" rx="6" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+        <text x="197" y="20" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777">ACTIVE SESSIONS</text>
+        <text x="197" y="46" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#171717">84</text>
+        <text x="197" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#727A60">Stable latency</text>
+
+        <!-- Stat 3 -->
+        <rect x="370" width="168" height="68" rx="6" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+        <text x="382" y="20" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777">SYSTEM INTEGRITY</text>
+        <text x="382" y="46" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#727A60">99.8%</text>
+        <text x="382" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#777777">All services normal</text>
+      </g>
+
+      <!-- Activity & Record Table -->
+      <g transform="translate(0, 130)">
+        <text font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#171717">Recent Administrative Activity</text>
+        <rect y="16" width="538" height="24" rx="4" fill="#F7F6F2"/>
+        <text x="12" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#777777">LOG ID</text>
+        <text x="80" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#777777">ACTION</text>
+        <text x="210" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#777777">TARGET USER</text>
+        <text x="360" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#777777">TIMESTAMP</text>
+        <text x="460" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#777777">STATUS</text>
+
+        <!-- Table Row 1 -->
+        <g transform="translate(0, 48)">
+          <text x="12" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#777777">#L-9812</text>
+          <text x="80" y="16" font-family="'Inter', sans-serif" font-size="10" font-weight="500" fill="#171717">Profile Updated</text>
+          <text x="210" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#777777">user_santos_m</text>
+          <text x="360" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#777777">10:42 AM</text>
+          <text x="460" y="16" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#52895A">SUCCESS</text>
+          <line x1="0" y1="26" x2="538" y2="26" stroke="#ECEBE6" stroke-width="1"/>
+        </g>
+
+        <!-- Table Row 2 -->
+        <g transform="translate(0, 80)">
+          <text x="12" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#777777">#L-9811</text>
+          <text x="80" y="16" font-family="'Inter', sans-serif" font-size="10" font-weight="500" fill="#171717">Role Assigned</text>
+          <text x="210" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#777777">user_delacruz_j</text>
+          <text x="360" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#777777">09:15 AM</text>
+          <text x="460" y="16" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#52895A">SUCCESS</text>
+          <line x1="0" y1="26" x2="538" y2="26" stroke="#ECEBE6" stroke-width="1"/>
+        </g>
+
+        <!-- Table Row 3 -->
+        <g transform="translate(0, 112)">
+          <text x="12" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#777777">#L-9810</text>
+          <text x="80" y="16" font-family="'Inter', sans-serif" font-size="10" font-weight="500" fill="#171717">Password Reset</text>
+          <text x="210" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#777777">admin_auth_svc</text>
+          <text x="360" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#777777">08:30 AM</text>
+          <text x="460" y="16" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#727A60">RESOLVED</text>
+          <line x1="0" y1="26" x2="538" y2="26" stroke="#ECEBE6" stroke-width="1"/>
+        </g>
+
+        <!-- Table Row 4 -->
+        <g transform="translate(0, 144)">
+          <text x="12" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#777777">#L-9809</text>
+          <text x="80" y="16" font-family="'Inter', sans-serif" font-size="10" font-weight="500" fill="#171717">Report Exported</text>
+          <text x="210" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#777777">admin_reports</text>
+          <text x="360" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#777777">Yesterday</text>
+          <text x="460" y="16" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#52895A">SUCCESS</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

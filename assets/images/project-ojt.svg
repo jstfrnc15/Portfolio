@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF9F5"/>
+      <stop offset="100%" stop-color="#EFECE6"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid lines -->
+  <line x1="0" y1="40" x2="800" y2="40" stroke="#E5E4DF" stroke-width="1"/>
+  <line x1="0" y1="460" x2="800" y2="460" stroke="#E5E4DF" stroke-width="1"/>
+
+  <!-- Browser / App Window Container -->
+  <g transform="translate(40, 30)">
+    <!-- Window Frame -->
+    <rect width="720" height="440" rx="10" fill="#FFFFFF" stroke="#E5E4DF" stroke-width="1.5" filter="url(#cardShadow)"/>
+
+    <!-- Window Top Bar -->
+    <path d="M 0 10 Q 0 0 10 0 L 710 0 Q 720 0 720 10 L 720 40 L 0 40 Z" fill="#F7F6F2"/>
+    <line x1="0" y1="40" x2="720" y2="40" stroke="#E5E4DF" stroke-width="1"/>
+    
+    <!-- Window Controls -->
+    <circle cx="22" cy="20" r="4.5" fill="#E2847A"/>
+    <circle cx="38" cy="20" r="4.5" fill="#E9C46A"/>
+    <circle cx="54" cy="20" r="4.5" fill="#8AB17D"/>
+    
+    <!-- Address Bar / App Header -->
+    <rect x="180" y="10" width="360" height="20" rx="4" fill="#FFFFFF" stroke="#E5E4DF" stroke-width="1"/>
+    <text x="360" y="24" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777" text-anchor="middle">ojt-portal.local/attendance/dashboard</text>
+
+    <!-- App Sub-nav / Breadcrumbs -->
+    <g transform="translate(24, 60)">
+      <text font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#171717">OJT Attendance Monitoring System</text>
+      <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="10" fill="#727A60">ACADEMIC YEAR 2025–2026 · BS INFORMATION TECHNOLOGY</text>
+      <line x1="0" y1="28" x2="672" y2="28" stroke="#ECEBE6" stroke-width="1"/>
+    </g>
+
+    <!-- Metric Cards Row -->
+    <g transform="translate(24, 105)">
+      <!-- Card 1: Hours Rendered -->
+      <rect width="210" height="74" rx="6" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+      <text x="14" y="22" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777">HOURS RENDERED</text>
+      <text x="14" y="48" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#171717">342.5 <tspan font-size="12" font-weight="400" fill="#777777">/ 500 hrs</tspan></text>
+      <!-- Progress Bar -->
+      <rect x="14" y="58" width="180" height="5" rx="2.5" fill="#E5E4DF"/>
+      <rect x="14" y="58" width="123" height="5" rx="2.5" fill="#727A60"/>
+
+      <!-- Card 2: Today's Status -->
+      <rect x="230" width="210" height="74" rx="6" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+      <text x="244" y="22" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777">TODAY'S RECORD</text>
+      <text x="244" y="48" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#171717">08:00 AM — IN</text>
+      <!-- Status Badge -->
+      <rect x="360" y="32" width="65" height="20" rx="10" fill="#EBF3ED" stroke="#BEDBCE" stroke-width="1"/>
+      <text x="392" y="45" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#52895A" text-anchor="middle">ACTIVE</text>
+
+      <!-- Card 3: Days Completed -->
+      <rect x="460" width="212" height="74" rx="6" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+      <text x="474" y="22" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777">REMAINING HOURS</text>
+      <text x="474" y="48" font-family="'Inter', sans-serif" font-size="20" font-weight="700" fill="#727A60">157.5 hrs</text>
+      <text x="474" y="64" font-family="'Inter', sans-serif" font-size="9" fill="#777777">~ 20 Working Days to completion</text>
+    </g>
+
+    <!-- Attendance Log Data Table -->
+    <g transform="translate(24, 195)">
+      <!-- Table Header -->
+      <rect width="672" height="28" fill="#F7F6F2" rx="4"/>
+      <text x="14" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#777777">DATE</text>
+      <text x="130" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#777777">TIME IN</text>
+      <text x="240" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#777777">TIME OUT</text>
+      <text x="350" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#777777">TOTAL</text>
+      <text x="460" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#777777">REMARKS</text>
+      <text x="590" y="18" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#777777">VERIFICATION</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 36)">
+        <text x="14" y="16" font-family="'Inter', sans-serif" font-size="11" fill="#171717" font-weight="500">Oct 14, 2026</text>
+        <text x="130" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">08:00 AM</text>
+        <text x="240" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#777777">— : —</text>
+        <text x="350" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">Ongoing</text>
+        <text x="460" y="16" font-family="'Inter', sans-serif" font-size="11" fill="#777777">On-site Task</text>
+        <rect x="580" y="3" width="70" height="18" rx="9" fill="#FFF8E7" stroke="#F1DEC6" stroke-width="1"/>
+        <text x="615" y="15" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#B38600" text-anchor="middle">In Progress</text>
+        <line x1="0" y1="28" x2="672" y2="28" stroke="#ECEBE6" stroke-width="1"/>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 72)">
+        <text x="14" y="16" font-family="'Inter', sans-serif" font-size="11" fill="#171717" font-weight="500">Oct 13, 2026</text>
+        <text x="130" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">07:55 AM</text>
+        <text x="240" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">05:02 PM</text>
+        <text x="350" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">8.0 hrs</text>
+        <text x="460" y="16" font-family="'Inter', sans-serif" font-size="11" fill="#777777">Database Design</text>
+        <rect x="580" y="3" width="70" height="18" rx="9" fill="#EBF3ED" stroke="#BEDBCE" stroke-width="1"/>
+        <text x="615" y="15" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#52895A" text-anchor="middle">Verified</text>
+        <line x1="0" y1="28" x2="672" y2="28" stroke="#ECEBE6" stroke-width="1"/>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 108)">
+        <text x="14" y="16" font-family="'Inter', sans-serif" font-size="11" fill="#171717" font-weight="500">Oct 12, 2026</text>
+        <text x="130" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">08:02 AM</text>
+        <text x="240" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">05:10 PM</text>
+        <text x="350" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">8.0 hrs</text>
+        <text x="460" y="16" font-family="'Inter', sans-serif" font-size="11" fill="#777777">Module Testing</text>
+        <rect x="580" y="3" width="70" height="18" rx="9" fill="#EBF3ED" stroke="#BEDBCE" stroke-width="1"/>
+        <text x="615" y="15" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#52895A" text-anchor="middle">Verified</text>
+        <line x1="0" y1="28" x2="672" y2="28" stroke="#ECEBE6" stroke-width="1"/>
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(0, 144)">
+        <text x="14" y="16" font-family="'Inter', sans-serif" font-size="11" fill="#171717" font-weight="500">Oct 11, 2026</text>
+        <text x="130" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">07:58 AM</text>
+        <text x="240" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">05:00 PM</text>
+        <text x="350" y="16" font-family="'JetBrains Mono', monospace" font-size="11" fill="#171717">8.0 hrs</text>
+        <text x="460" y="16" font-family="'Inter', sans-serif" font-size="11" fill="#777777">Frontend Layout</text>
+        <rect x="580" y="3" width="70" height="18" rx="9" fill="#EBF3ED" stroke="#BEDBCE" stroke-width="1"/>
+        <text x="615" y="15" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#52895A" text-anchor="middle">Verified</text>
+      </g>
+    </g>
+  </g>
+</svg>

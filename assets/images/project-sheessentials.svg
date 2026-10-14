@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="sheDarkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E0F14"/>
+      <stop offset="100%" stop-color="#08090C"/>
+    </linearGradient>
+    <filter id="cardShadowDark1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="500" fill="url(#sheDarkGrad)"/>
+  <line x1="0" y1="40" x2="800" y2="40" stroke="#1F2128" stroke-width="1"/>
+  <line x1="0" y1="460" x2="800" y2="460" stroke="#1F2128" stroke-width="1"/>
+
+  <!-- Application Window -->
+  <g transform="translate(40, 30)">
+    <rect width="720" height="440" rx="10" fill="#111217" stroke="#22242C" stroke-width="1.5" filter="url(#cardShadowDark1)"/>
+
+    <!-- Window Top Header -->
+    <path d="M 0 10 Q 0 0 10 0 L 710 0 Q 720 0 720 10 L 720 40 L 0 40 Z" fill="#16171F"/>
+    <line x1="0" y1="40" x2="720" y2="40" stroke="#22242C" stroke-width="1"/>
+    
+    <!-- Controls -->
+    <circle cx="22" cy="20" r="4.5" fill="#EF4444"/>
+    <circle cx="38" cy="20" r="4.5" fill="#F59E0B"/>
+    <circle cx="54" cy="20" r="4.5" fill="#10B981"/>
+    
+    <!-- Address Bar -->
+    <rect x="180" y="10" width="360" height="20" rx="4" fill="#0C0D11" stroke="#22242C" stroke-width="1"/>
+    <text x="360" y="24" font-family="'JetBrains Mono', monospace" font-size="9" fill="#10B981" text-anchor="middle">https://she-essentials.vercel.app</text>
+
+    <!-- Sidebar (Left) -->
+    <rect x="0" y="40" width="145" height="400" fill="#0E0F14" stroke="#22242C" stroke-width="1"/>
+    <g transform="translate(16, 62)">
+      <text font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#EDEDED">SheEssentials</text>
+      <text x="0" y="14" font-family="'JetBrains Mono', monospace" font-size="8" fill="#10B981">HR &amp; PAYROLL SAAS</text>
+
+      <g transform="translate(0, 30)">
+        <rect width="115" height="24" rx="4" fill="#1C1E26"/>
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#EDEDED">Payroll Summary</text>
+      </g>
+      <g transform="translate(0, 62)">
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#71717A">Attendance Logs</text>
+      </g>
+      <g transform="translate(0, 92)">
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#71717A">Tax Computations</text>
+      </g>
+      <g transform="translate(0, 122)">
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#71717A">Disbursements</text>
+      </g>
+      <g transform="translate(0, 152)">
+        <text x="10" y="16" font-family="'Inter', sans-serif" font-size="10" fill="#71717A">Employee Roster</text>
+      </g>
+    </g>
+
+    <!-- Main Workspace Area -->
+    <g transform="translate(165, 55)">
+      <!-- Top Bar -->
+      <text font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#EDEDED">Payroll Cycle: Oct 01 – Oct 15, 2026</text>
+      <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="9" fill="#9CA3AF">SEMI-MONTHLY DISBURSEMENT DISPATCH</text>
+      
+      <!-- Export button -->
+      <rect x="420" y="0" width="115" height="26" rx="4" fill="#10B981"/>
+      <text x="477" y="17" font-family="'Inter', sans-serif" font-size="10" font-weight="600" fill="#090A0C" text-anchor="middle">Disburse Payroll</text>
+
+      <!-- Metric Cards -->
+      <g transform="translate(0, 38)">
+        <!-- Card 1 -->
+        <rect width="170" height="70" rx="6" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+        <text x="12" y="20" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#71717A">TOTAL NET PAYROLL</text>
+        <text x="12" y="46" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#EDEDED">₱ 1,482,500</text>
+        <text x="12" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#10B981">✓ 142 Employees Processed</text>
+
+        <!-- Card 2 -->
+        <rect x="185" width="170" height="70" rx="6" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+        <text x="197" y="20" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#71717A">TAX &amp; MANDATORY</text>
+        <text x="197" y="46" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#EDEDED">₱ 284,120</text>
+        <text x="197" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#9CA3AF">SSS · PhilHealth · Pag-IBIG</text>
+
+        <!-- Card 3 -->
+        <rect x="370" width="168" height="70" rx="6" fill="#14161D" stroke="#22242C" stroke-width="1"/>
+        <text x="382" y="20" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#71717A">ATTENDANCE ACCURACY</text>
+        <text x="382" y="46" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#10B981">99.4%</text>
+        <text x="382" y="60" font-family="'Inter', sans-serif" font-size="8.5" fill="#71717A">Biometrics verified</text>
+      </g>
+
+      <!-- Table -->
+      <g transform="translate(0, 126)">
+        <text font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#EDEDED">Employee Computation Breakdown</text>
+        
+        <!-- Table Header -->
+        <rect y="16" width="538" height="24" rx="4" fill="#14161D"/>
+        <text x="12" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#71717A">EMPLOYEE</text>
+        <text x="145" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#71717A">HOURS</text>
+        <text x="220" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#71717A">BASIC PAY</text>
+        <text x="310" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#71717A">DEDUCTIONS</text>
+        <text x="405" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#71717A">NET PAY</text>
+        <text x="480" y="32" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#71717A">STATUS</text>
+
+        <!-- Row 1 -->
+        <g transform="translate(0, 48)">
+          <text x="12" y="16" font-family="'Inter', sans-serif" font-size="10.5" font-weight="500" fill="#EDEDED">Alvarez, Elena M.</text>
+          <text x="145" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#9CA3AF">80.0 hrs</text>
+          <text x="220" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#EDEDED">₱ 24,000</text>
+          <text x="310" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#71717A">₱ 2,840</text>
+          <text x="405" y="16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#10B981">₱ 21,160</text>
+          <rect x="475" y="4" width="55" height="18" rx="9" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+          <text x="502" y="16" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#10B981" text-anchor="middle">Ready</text>
+          <line x1="0" y1="26" x2="538" y2="26" stroke="#1F2128" stroke-width="1"/>
+        </g>
+
+        <!-- Row 2 -->
+        <g transform="translate(0, 80)">
+          <text x="12" y="16" font-family="'Inter', sans-serif" font-size="10.5" font-weight="500" fill="#EDEDED">De Leon, Marcus C.</text>
+          <text x="145" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#9CA3AF">80.0 hrs</text>
+          <text x="220" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#EDEDED">₱ 28,500</text>
+          <text x="310" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#71717A">₱ 3,420</text>
+          <text x="405" y="16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#10B981">₱ 25,080</text>
+          <rect x="475" y="4" width="55" height="18" rx="9" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+          <text x="502" y="16" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#10B981" text-anchor="middle">Ready</text>
+          <line x1="0" y1="26" x2="538" y2="26" stroke="#1F2128" stroke-width="1"/>
+        </g>
+
+        <!-- Row 3 -->
+        <g transform="translate(0, 112)">
+          <text x="12" y="16" font-family="'Inter', sans-serif" font-size="10.5" font-weight="500" fill="#EDEDED">Reyes, Sophia T.</text>
+          <text x="145" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#9CA3AF">76.5 hrs</text>
+          <text x="220" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#EDEDED">₱ 21,000</text>
+          <text x="310" y="16" font-family="'JetBrains Mono', monospace" font-size="10" fill="#71717A">₱ 2,410</text>
+          <text x="405" y="16" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#10B981">₱ 18,590</text>
+          <rect x="475" y="4" width="55" height="18" rx="9" fill="rgba(245, 158, 11, 0.15)" stroke="rgba(245, 158, 11, 0.3)" stroke-width="1"/>
+          <text x="502" y="16" font-family="'Inter', sans-serif" font-size="8.5" font-weight="600" fill="#F59E0B" text-anchor="middle">Review</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

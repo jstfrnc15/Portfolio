@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAF9F5"/>
+      <stop offset="100%" stop-color="#EFECE6"/>
+    </linearGradient>
+    <filter id="cardShadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.04"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad3)"/>
+  <line x1="0" y1="40" x2="800" y2="40" stroke="#E5E4DF" stroke-width="1"/>
+  <line x1="0" y1="460" x2="800" y2="460" stroke="#E5E4DF" stroke-width="1"/>
+
+  <!-- Browser Window Frame -->
+  <g transform="translate(40, 30)">
+    <rect width="720" height="440" rx="10" fill="#FFFFFF" stroke="#E5E4DF" stroke-width="1.5" filter="url(#cardShadow3)"/>
+
+    <!-- Window Top Bar -->
+    <path d="M 0 10 Q 0 0 10 0 L 710 0 Q 720 0 720 10 L 720 40 L 0 40 Z" fill="#F7F6F2"/>
+    <line x1="0" y1="40" x2="720" y2="40" stroke="#E5E4DF" stroke-width="1"/>
+    
+    <!-- Window Controls -->
+    <circle cx="22" cy="20" r="4.5" fill="#E2847A"/>
+    <circle cx="38" cy="20" r="4.5" fill="#E9C46A"/>
+    <circle cx="54" cy="20" r="4.5" fill="#8AB17D"/>
+    
+    <!-- URL -->
+    <rect x="180" y="10" width="360" height="20" rx="4" fill="#FFFFFF" stroke="#E5E4DF" stroke-width="1"/>
+    <text x="360" y="24" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777" text-anchor="middle">design-experiments.local/responsive-layout</text>
+
+    <!-- Page Content (Editorial Minimalist Web Layout) -->
+    <g transform="translate(36, 65)">
+      <!-- Mini Nav -->
+      <text font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#171717">STUDIO ARCHIVE</text>
+      <text x="540" y="0" font-family="'JetBrains Mono', monospace" font-size="9" fill="#777777">INDEX · ESSAYS · LAB</text>
+      <line x1="0" y1="14" x2="648" y2="14" stroke="#ECEBE6" stroke-width="1"/>
+
+      <!-- Hero of the Mockup Site -->
+      <g transform="translate(0, 36)">
+        <text font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#727A60" letter-spacing="1">ISSUE N° 04 / INTERFACE &amp; FORM</text>
+        <text y="32" font-family="'Inter', sans-serif" font-size="24" font-weight="600" fill="#171717" letter-spacing="-0.5">The Structure of Digital Simplicity</text>
+        <text y="58" font-family="'Inter', sans-serif" font-size="11.5" fill="#777777">Exploring typography, grid rhythms, and friction-free user experiences.</text>
+      </g>
+
+      <!-- Editorial Columns -->
+      <g transform="translate(0, 125)">
+        <!-- Column 1: Feature Card -->
+        <rect width="310" height="195" rx="6" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+        <rect x="14" y="14" width="282" height="110" rx="4" fill="#EFECE6"/>
+        <text x="28" y="72" font-family="'JetBrains Mono', monospace" font-size="11" fill="#727A60">GRID EXPERIMENT / 01</text>
+        <text x="14" y="145" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#171717">Fluid Spacing Systems</text>
+        <text x="14" y="165" font-family="'Inter', sans-serif" font-size="10" fill="#777777">Balancing CSS clamp() formulas across dynamic viewports.</text>
+        <text x="14" y="188" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#727A60">Read case study →</text>
+
+        <!-- Column 2: Two Smaller Cards -->
+        <g transform="translate(328, 0)">
+          <!-- Sub-card 1 -->
+          <rect width="320" height="90" rx="6" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+          <text x="16" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#727A60">AESTHETICS &amp; SPEED</text>
+          <text x="16" y="44" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#171717">Zero-Runtime CSS Architecture</text>
+          <text x="16" y="64" font-family="'Inter', sans-serif" font-size="10" fill="#777777">Achieving sub-second First Contentful Paint with semantic HTML.</text>
+
+          <!-- Sub-card 2 -->
+          <g transform="translate(0, 105)">
+            <rect width="320" height="90" rx="6" fill="#F7F6F2" stroke="#E5E4DF" stroke-width="1"/>
+            <text x="16" y="24" font-family="'JetBrains Mono', monospace" font-size="8.5" fill="#727A60">ACCESSIBILITY</text>
+            <text x="16" y="44" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#171717">Predictable Focus &amp; Keyboard Patterns</text>
+            <text x="16" y="64" font-family="'Inter', sans-serif" font-size="10" fill="#777777">Designing digital products that everyone can navigate seamlessly.</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
